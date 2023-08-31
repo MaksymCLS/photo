@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+
+@mixin fl($align: center, $justify: space-between) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// .head {
+//     &_nav {
+//         @include fl;
+//     }
+
+//     &_ul {
+//         @include fl;
+//         list-style: none;
+//         margin-right: 264px;
+
+//         &-li {
+//             padding-right: 37px;
+//             color: #000;
+//             font-size: 12px;
+//             font-weight: 700;
+//             letter-spacing: 2px;
+//             text-transform: uppercase;
+
+//             &:hover {
+//                 color: #000;
+//                 opacity: 0.30000001192092896;
+//                 cursor: pointer;
+
+//             }
+//         }
+//     }
+
+//     &_abtn {
+//         display: inline-block;
+//         padding: 12px 24px;
+//         background-color: #000;
+//         color: #fff;
+//         text-decoration: none;
+//         font-size: 12px;
+//         font-weight: 700;
+//         letter-spacing: 2px;
+
+//         &:hover {
+//             background-color: #DFDFDF;
+//             color: #000;
+//         }
+//     }
+
+// }
+
+.create {
+    height: 650px;
+
+    .review {
+        width: 610px;
+        height: 658px;
+        background: #000;
+
+        h2 {
+            color: #FFF;
+        }
+
+        p {
+            color: #FFF;
+        }
+
+        a {
+            color: #FFF;
+        }
+
+        &::after {
+            content: url(./image/arrow.svg);
+            position: relative;
+            left: 240px;
+            bottom: 489px;
+        }
+    }
+
+    .rectangle {
+        position: relative;
+        top: -281px;
+        left: -111px;
+    }
+
+}
+
+.stories {
+    height: 600px;
+
+    .review {
+        width: 610px;
+        height: 600px;
+
+        &::after {
+            content: url(./image/arrow2.svg);
+            position: relative;
+            left: 265px;
+            bottom: 177px;
+        }
+    }
+
+}
+
+.designed {
+    height: 600px;
+
+    .review {
+        width: 610px;
+        height: 600px;
+
+        &::after {
+            content: url(./image/arrow2.svg);
+            position: relative;
+            left: 265px;
+            bottom: 177px;
+        }
+    }
+
+}
+
+.advantages {
+    margin-top: 120px;
+
+    &_img {
+        padding-bottom: 48px;
+    }
+
+    &_specimg1 {
+        padding-top: 35px;
+        padding-bottom: 48px;
+
+    }
+
+    &_specimg2 {
+        padding-top: 25px;
+    }
+
+    &_h3 {
+        padding-bottom: 16px;
+    }
+
+    .items {
+        width: 350px;
+        text-align: center;
+    }
+
+}
+

@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+
+@mixin fl($align: center, $justify: space-between) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+.hazy {
+    &_special {
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        color: #fff;
+        font-size: 13px;
+
+    }
+
+    .review {
+        background-image: url(./image/image2/appalachia.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &_box {
+            margin-left: 112px;
+        }
+
+        &_h2 {
+            color: #fff;
+        }
+
+        &_p {
+            color: #fff;
+        }
+
+        .hazyH4 {
+            color: #fff;
+            padding-bottom: 24px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .hazyP {
+            opacity: 0.75;
+            padding-right: 9px;
+
+        }
+
+        .arrow {
+            color: #fff;
+
+            &::after {
+                content: url(./image/arrow.svg);
+                position: relative;
+                left: 17px;
+                bottom: -3px
+            }
+        }
+    }
+
+
+}
